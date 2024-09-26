@@ -2,7 +2,6 @@ import { LightningElement, wire, track } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import appoappointment from '@salesforce/apex/AppointmentSlotApex.appoappointment';
 import checkDuplicateAppointment from '@salesforce/apex/AppointmentSlotApex.checkDuplicateAppointment';
-//import checkDuplicateAppointments from '@salesforce/apex/AppointmentSlotApex.checkDuplicateAppointments';
 
 
 
@@ -98,20 +97,4 @@ export default class AppointmentForm extends  LightningElement {
 
 
 
-        // event.preventDefault();
-        // const fields = event.detail.fields;
-
-        // const timeString = this.handltime;
-
-        // checkDuplicateAppointment({ appoinmentTimes: timeString, appoinmentDatess: this.appoinmentDates })
-        //     .then(result => {
-        //         if (result) {
-        //             console.log(this.result);
-        //             this.showToast('An appointment  dupliduplicate at the  date and time already exists', 'An appointment at the selected date and time already exists.', 'error');
-        //         } else {
-        //             this.template.querySelector('lightning-record-edit-form').submit(fields);
-        //         }
-        //     })
-        //     .catch(error => {
-        //         this.showToast('Error', error.body.message, 'error');
-        //     });
+     
