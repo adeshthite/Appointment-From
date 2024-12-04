@@ -8,7 +8,7 @@ import checkDuplicateAppointment from '@salesforce/apex/AppointmentSlotApex.chec
 
 export default class AppointmentForm extends  LightningElement {
 
-   @track error;
+   @track error; 
     result;
     dateCount;
 
