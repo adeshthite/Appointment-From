@@ -13,7 +13,7 @@ public class AppointmentSlotApex {
     }
 
 
-     @AuraEnabled(cacheable=true)
+     @AuraEnabled(cacheable=true) 
     public static Boolean checkDuplicateAppointment(String appoinmentTimes,Date appoinmentDatess ) {
         if(checkDuplicateAppointments(appoinmentTimes,appoinmentDatess)){
               throw new AuraHandledException('An appointment already exists for the specified date and time.');
